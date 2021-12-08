@@ -1,2 +1,3 @@
 # passGenerator
-password generator
+Password Generator
+# https://abdulrahmanmaktabi.github.io/passGenerator/
