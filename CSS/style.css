@@ -1,0 +1,149 @@
+* , *::before ,*::after {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: 'Orbitron', sans-serif;
+    background-color: #f9fafb;
+}
+@media (max-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+@media (max-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+@media (max-width: 768px) {
+    .container {
+        width: 750px;
+    }
+}
+/* Start Styling */
+.box {
+    position: relative;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+.box .container {
+    margin: 0 auto;
+}
+.box .container .tit{
+    font-weight: 900;
+    text-align: center;
+    position: relative;
+    user-select: none;
+    cursor: pointer;
+}
+.box .container .tit::after{
+    content: 'PASSWORD GENERATOR TOOL';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom:-18px;
+    color:#aaa;
+    font-size: 18px;
+}
+.box .sub-tit {
+    text-align: center;
+    margin-top:30px;
+}
+.box .pass-box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 600px;
+    margin: 40px auto;
+    background-color: #ffffff;
+    border-radius: 6px;
+    padding:20px;
+    box-shadow: 0 0 10px #777;
+    border-bottom: 8px solid #dd2222;
+}
+.box .pass-box p {
+    font-size: 21px;
+    color:#000 !important;
+}
+.box .pass-box .icons{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 60px;
+}
+.box .pass-box .icons i{
+    font-size: 21px;
+}
+.box .pass-box .icons .copy {
+    cursor: pointer;
+    transition: .5s;
+}
+.box .pass-box .icons .copy:hover {
+    font-size:19px;
+}
+.box .pass-box .icons a {
+    color:#000;
+}
+.box .pass-box .icons .reload {
+    cursor: pointer;
+    transition: .5s;
+}
+.box .pass-box .icons .reload:hover {
+    transform: rotate(360deg);
+}
+.box .custem {
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 6px;
+    margin: auto;
+    background-color: #fff;
+    width: 600px;
+    padding: 20px;
+    box-shadow: 0 0 10px #777;
+    display: flex;
+    flex-direction: column;
+    min-height: 200px;
+    border-bottom: 8px solid #dd2222;
+}
+.box .custem form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width:300px
+}
+.box .custem form label{
+    font-size: 18px;
+}
+.box .custem form input{
+    width: 60px;
+    height: 30px;
+    padding:5px;
+}
+.box  .custem .btn {
+    margin-top:40px;
+    width:300px;
+    background-color:#dd2222;
+    color:#fff;
+    border:none;
+    border-radius:2px;
+    padding:10px;
+    cursor:pointer;
+    transition: .5s;
+}
+.box  .custem .btn:hover {
+    opacity: .7;
+}
+.darkmode--activated p , .darkmode--activated li , .darkmode--activated h1{
+    color: #fff;
+}
+.button {
+    isolation: isolate;
+}
+.darkmode--activated .logo {
+    mix-blend-mode: difference;
+}

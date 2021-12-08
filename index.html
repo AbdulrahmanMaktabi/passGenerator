@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>passGenerator</title>
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="./CSS/style.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <!-- Favico -->
+    <link rel="shortcut icon" href="./IMAGES/favico.png" type="image/x-icon">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="./CSS/all.min.css">
+</head>
+<body>
+    <div class="box">
+        <div class="container">
+            <h1 class="tit">Generate a secure password</h1>
+            <p class="sub-tit">You can generate your own password securely and random online</p>
+            <div class="pass-box">
+                <p class="pass" value="" id="copyThisPass"></p>
+                <div class="icons">
+                    <a href="" class="linkToCopy btn" data-clipboard-target="#copyThisPass"><i class="fas fa-copy copy"></i></a>
+                    <a href="" class="linkToGen"><i class="fas fa-sync-alt reload"></i></a>
+                </div>
+            </div>
+            <div class="custem">
+                <h2>Customize your password</h2>
+                <div class="inputs">
+                    <form action="">
+                        <label for="">Password Length</label>
+                        <input type="number" name="" id="" max="50" min="0">
+                    </form>
+                    <button class="btn" onclick="makePass()">Make My Password</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.8/clipboard.min.js"></script>
+    <script src="./JS/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.7/lib/darkmode-js.min.js"></script>
+    <script>
+        function addDarkmodeWidget() {
+        new Darkmode().showWidget();
+        }
+        window.addEventListener('load', addDarkmodeWidget);
+    </script>
+</body>
+</html>
